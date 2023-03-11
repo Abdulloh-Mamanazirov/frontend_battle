@@ -9,9 +9,107 @@
     <title>Main page</title>
 </head>
 <body>
-    
+    <nav id="nav2">
+        <div class="container">
+            <span><label for="navlabel"><i class="fa-solid fa-bars"></i></label><input type="checkbox" id="navlabel" hidden>
+                <div class="navUl">
+                    <span class="nimadir">
+                        <span class="logo2">LOGO</span>
+                        <label for="navlabel"><i class="fa-solid fa-x"></i>       
+                    </span>
+                    <ul id="navulLinks">
+                        <li class="nlink"><a href="#">Biz haqimizda</a></li>
+                        <li class="nlink"><a href="./pages/portfolio.html">Portfolio</a></li>
+                        <li class="nlink"><a href="./pages/news.html">Xizmatlar</a></li>
+                        <li class="nlink"><a href="#">Buyurtma berish</a></li>
+                    </ul>
+                    <a class="navulbtn" href="tel:+9998999999999">(99) 999-99-99</a>
+                </div>
+            </span>
+            <span class="logo2">LOGO</span>
+            <span><input type="radio" name="" id=""></span>
+        </div>
+    </nav>
+    <nav id="navbar">
+        <div class="container">
+            <span>LOGO</span>
+            <ul class="d-flex">
+                <li><a href="#">Biz haqimizda</a></li>
+                <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                <li><a href="./pages/news.html">Xizmatlar</a></li>
+                <li><a href="#">Buyurtma berish</a></li>
+            </ul>
+            <div class="rightSideNav d-flex">
+                <div class="checkboxContainer">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                  <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball'>
+                  </label>
+                </div>
+                <span class="tel d-flex">
+                    <a href="tel:+998907777777">+998 90 777-77-77</a>
+                    <a class="navMail" href="mailto:chotatam@gmail.com">chotatam@gmail.com</a>
+                </span>
+                <a class="callBtn" href="#">Qo'ng'roq qilish</a>
+            </div>
+        </div>
+    </nav>
+    <header id="headerA">
+        <div class="bgImage2">
+            <div class="container">
+                <div class="headerTxt">
+                    <h1>Biz veb-saytlar,  ilovalarni ishlab chiqamiz</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <span class="purplebtn"><a href="./pages/portfolio.html">Portfolio</a></span>
+                </div>
+                <div class="globe">
+                    <canvas
+                      id="cobe"
+                      style="width: 500px; height: 500px"
+                      width="1000"
+                      height="1000"
+                    ></canvas>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
     <script src="./js/index.js"></script>
+    <script type="module">
+  import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+  let phi = 0
+  let canvas = document.getElementById("cobe")
+
+  const globe = createGlobe(canvas, {
+    devicePixelRatio: 2,
+    width: 1000,
+    height: 1000,
+    phi: 0,
+    theta: 0,
+    dark: 0,
+    diffuse: 1.2,
+    scale: 1,
+    mapSamples: 16000,
+    mapBrightness: 6,
+    baseColor: [1, 1, 1],
+    markerColor: [1, 0.5, 1],
+    glowColor: [1, 1, 1],
+    offset: [0, 0],
+    markers: [
+      { location: [37.7595, -122.4367], size: 0.03 },
+      { location: [40.7128, -74.006], size: 0.1 },
+    ],
+    onRender: (state) => {
+      // Called on every animation frame.
+      // `state` will be an empty object, return updated params.
+      state.phi = phi
+      phi += 0.01
+    },
+  })
+</script>
 </body>
 </html>

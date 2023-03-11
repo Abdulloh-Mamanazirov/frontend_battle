@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+nav#navbar {
+  font-weight: 500;
+  padding: 20px 0;
+  background-color: #b3b3b3e9;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 250px;
+    ul {
+      list-style: none;
+      gap: 20px;
+      font-size: 20px;
+    }
+    .rightSideNav {
+      margin-right: 70px;
+      .checkboxContainer {
+        // margin-right: 50px;
+        .checkbox {
+          opacity: 0;
+          position: absolute;
+        }
+
+        .label {
+          width: 50px;
+          height: 26px;
+          background-color: #111;
+          display: flex;
+          border-radius: 50px;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px;
+          position: relative;
+          transform: scale(1.5);
+          cursor: pointer;
+        }
+
+        .ball {
+          width: 20px;
+          height: 20px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          border-radius: 50%;
+          transition: transform 0.2s linear;
+        }
+
+        /*  target the elemenent after the label*/
+        .checkbox:checked + .label .ball {
+          transform: translateX(24px);
+        }
+
+        .fa-moon {
+          color: pink;
+        }
+
+        .fa-sun {
+          color: yellow;
+          padding-left: 10px;
+        }
+      }
+      span.tel {
+        margin: 0 10px 0 30px;
+        white-space: nowrap;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+        .navMail {
+          font-size: 10px;
+        }
+      }
+      a.callBtn {
+        padding: 10px;
+        background-color: #6911ad;
+        border-radius: 10px;
+        font-size: 12px;
+        white-space: nowrap;
+        color: white;
+      }
+    }
+  }
+}
+nav#nav2 {
+  background-color: #b3b3b3e9;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 0;
+  font-size: 25px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span.logo2 {
+      font-family: Bangers;
+      font-size: 45px;
+    }
+    .navUl{
+        padding: 10px;
+        position: absolute;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.755);
+        color:white;
+        display: none;
+        .nimadir{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 25px;
+        }
+        .nlink{
+            font-weight: 700;
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        .navulbtn{
+            padding: 15px 24px;
+            background-color: #6911ad;
+            border-radius: 20px;
+            margin-top: auto;
+        }
+        }
+    }
+    #navlabel:checked ~ .navUl{
+        
+            display: block;
+        
+    }
+  }
+
+header#headerA {
+  height: 90vh;
+  background: url("../assets/images/main_page/bgHeader.png") no-repeat;
+  background-position: 0 -100px;
+  padding-bottom: 20px;
+  .bgImage2 {
+    background: url("../assets/images/main_page/bgHeader2.png") no-repeat;
+    background-position: top right;
+    .container {
+      padding-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div.headerTxt {
+        flex: 1;
+        h1 {
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 58.46px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 21px;
+          margin-bottom: 70px;
+          @media (max-width: 1000px) {
+            margin-bottom: 10px;
+          }
+        }
+        .purplebtn {
+          color: #fff;
+          padding: 18px 30px;
+          border-radius: 30px;
+          background-color: #6911ad;
+          display: block;
+          width: 10px;
+          transition: all 0.3s;
+          &:hover {
+            width: 150px;
+          }
+          @media (max-width: 1000px) {
+            width: 150px;
+            margin: 0 auto;
+            text-align: center;
+          }
+        }
+      }
+      .globe {
+        flex: 1;
+      }
+      @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav#navbar {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  nav#nav2 {
+    display: none;
+  }
+}
