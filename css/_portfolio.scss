@@ -1,0 +1,20 @@
+
+  .projectCardsofportfolio {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    .prCard {
+      position: relative;
+      & p {
+        position: absolute;
+        background-color: #fff;
+        color: #111 !important;
+        padding: 10px;
+        border-radius: 15px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+  }
