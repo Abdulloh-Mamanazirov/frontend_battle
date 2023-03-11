@@ -100,6 +100,21 @@ nav#navbar {
     }
   }
 }
+
+
+@media (max-width: 1000px) {
+  nav#navbar {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  nav#nav2 {
+    display: none;
+  }
+}
+    
+  }
+
 nav#nav2 {
   background-color: #b3b3b3e9;
   position: sticky;
@@ -210,19 +225,6 @@ header#headerA {
     height: auto;
   }
 }
-
-@media (max-width: 1000px) {
-  nav#navbar {
-    display: none;
-  }
-}
-@media (min-width: 1000px) {
-  nav#nav2 {
-    display: none;
-  }
-}
-    
-  }
   @media (max-width: 900px) {
     .container {
       .CardAll {

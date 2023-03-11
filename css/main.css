@@ -47,7 +47,6 @@ nav#navbar .container ul .rightSideNav {
   margin-right: 70px;
 }
 
-
 nav#navbar .container ul .rightSideNav .checkboxContainer .checkbox {
   opacity: 0;
   position: absolute;
@@ -126,7 +125,19 @@ nav#navbar .container ul .rightSideNav a.callBtn {
   color: white;
 }
 
-nav#navbar nav#nav2 {
+@media (max-width: 1000px) {
+  nav#navbar nav#navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav#navbar nav#nav2 {
+    display: none;
+  }
+}
+
+nav#nav2 {
   background-color: #b3b3b3e9;
   position: -webkit-sticky;
   position: sticky;
@@ -136,7 +147,7 @@ nav#navbar nav#nav2 {
   font-size: 25px;
 }
 
-nav#navbar nav#nav2 .container {
+nav#nav2 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,12 +159,12 @@ nav#navbar nav#nav2 .container {
           justify-content: space-between;
 }
 
-nav#navbar nav#nav2 .container span.logo2 {
+nav#nav2 .container span.logo2 {
   font-family: Bangers;
   font-size: 45px;
 }
 
-nav#navbar nav#nav2 .container .navUl {
+nav#nav2 .container .navUl {
   padding: 10px;
   position: absolute;
   inset: 0;
@@ -164,7 +175,7 @@ nav#navbar nav#nav2 .container .navUl {
   display: none;
 }
 
-nav#navbar nav#nav2 .container .navUl .nimadir {
+nav#nav2 .container .navUl .nimadir {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,36 +188,36 @@ nav#navbar nav#nav2 .container .navUl .nimadir {
   padding-bottom: 25px;
 }
 
-nav#navbar nav#nav2 .container .navUl .nlink {
+nav#nav2 .container .navUl .nlink {
   font-weight: 700;
   font-size: 30px;
   padding-bottom: 30px;
 }
 
-nav#navbar nav#nav2 .container .navUl .navulbtn {
+nav#nav2 .container .navUl .navulbtn {
   padding: 15px 24px;
   background-color: #6911ad;
   border-radius: 20px;
   margin-top: auto;
 }
 
-nav#navbar nav#nav2 #navlabel:checked ~ .navUl {
+nav#nav2 #navlabel:checked ~ .navUl {
   display: block;
 }
 
-nav#navbar header#headerA {
+header#headerA {
   height: 90vh;
   background: url("../assets/images/main_page/bgHeader.png") no-repeat;
   background-position: 0 -100px;
   padding-bottom: 20px;
 }
 
-nav#navbar header#headerA .bgImage2 {
+header#headerA .bgImage2 {
   background: url("../assets/images/main_page/bgHeader2.png") no-repeat;
   background-position: top right;
 }
 
-nav#navbar header#headerA .bgImage2 .container {
+header#headerA .bgImage2 .container {
   padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,19 +230,19 @@ nav#navbar header#headerA .bgImage2 .container {
           justify-content: space-between;
 }
 
-nav#navbar header#headerA .bgImage2 .container div.headerTxt {
+header#headerA .bgImage2 .container div.headerTxt {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-nav#navbar header#headerA .bgImage2 .container div.headerTxt h1 {
+header#headerA .bgImage2 .container div.headerTxt h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 58.46px;
 }
 
-nav#navbar header#headerA .bgImage2 .container div.headerTxt p {
+header#headerA .bgImage2 .container div.headerTxt p {
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
@@ -239,12 +250,12 @@ nav#navbar header#headerA .bgImage2 .container div.headerTxt p {
 }
 
 @media (max-width: 1000px) {
-  nav#navbar header#headerA .bgImage2 .container div.headerTxt p {
+  header#headerA .bgImage2 .container div.headerTxt p {
     margin-bottom: 10px;
   }
 }
 
-nav#navbar header#headerA .bgImage2 .container div.headerTxt .purplebtn {
+header#headerA .bgImage2 .container div.headerTxt .purplebtn {
   color: #fff;
   padding: 18px 30px;
   border-radius: 30px;
@@ -255,26 +266,26 @@ nav#navbar header#headerA .bgImage2 .container div.headerTxt .purplebtn {
   transition: all 0.3s;
 }
 
-nav#navbar header#headerA .bgImage2 .container div.headerTxt .purplebtn:hover {
+header#headerA .bgImage2 .container div.headerTxt .purplebtn:hover {
   width: 150px;
 }
 
 @media (max-width: 1000px) {
-  nav#navbar header#headerA .bgImage2 .container div.headerTxt .purplebtn {
+  header#headerA .bgImage2 .container div.headerTxt .purplebtn {
     width: 150px;
     margin: 0 auto;
     text-align: center;
   }
 }
 
-nav#navbar header#headerA .bgImage2 .container .globe {
+header#headerA .bgImage2 .container .globe {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 @media (max-width: 1000px) {
-  nav#navbar header#headerA .bgImage2 .container {
+  header#headerA .bgImage2 .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -284,20 +295,8 @@ nav#navbar header#headerA .bgImage2 .container .globe {
 }
 
 @media (max-width: 1000px) {
-  nav#navbar header#headerA {
+  header#headerA {
     height: auto;
-  }
-}
-
-@media (max-width: 1000px) {
-  nav#navbar nav#navbar {
-    display: none;
-  }
-}
-
-@media (min-width: 1000px) {
-  nav#navbar nav#nav2 {
-    display: none;
   }
 }
 
