@@ -54,6 +54,71 @@ section#our-advantages .container .cards .card .hr {
   border-radius: 10px;
 }
 
+section#form .container {
+  border-radius: 20px;
+  margin-top: 4rem;
+  border: 2px solid grey;
+  padding: 50px 80px;
+  background-color: white;
+}
+section#form .container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+section#form .container form .left .forma {
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 22px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+section#form .container form .left .checkboxFlex {
+  display: flex;
+  gap: 2rem;
+}
+section#form .container form .right .card {
+  background-color: rgba(83, 83, 83, 0.1);
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+section#form .container form .right .card .ichimliklar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+section#form .container form .right .card .ichimliklar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#footer footer {
+  padding: 2rem 2rem;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 5rem;
+  background-color: white;
+}
+section#footer footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+section#footer footer ul .li-location {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+section#footer footer ul .sotial {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  gap: 1rem;
+}
+
 @media (max-width: 1024px) {
   section#m-about-company .container h1 {
     text-align: center;

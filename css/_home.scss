@@ -2,132 +2,207 @@
 
 // styles section about company!
 section#m-about-company {
-    .container {
-      h1 {
-        font-weight: 600;
-        font-size: 35px;
+  .container {
+    h1 {
+      font-weight: 600;
+      font-size: 35px;
+    }
+    .body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      .about {
       }
-      .body {
+      .status {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        .about {
+
+        .liniar {
+          font-size: 40px;
+          font-weight: 600;
+          background: linear-gradient(
+            96.96deg,
+            rgba(0, 40, 248, 0.89) -0.76%,
+            #6911ad 100%
+          );
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
         }
-        .status {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-  
-          .liniar {
-            font-size: 40px;
-            font-weight: 600;
-            background: linear-gradient(
-              96.96deg,
-              rgba(0, 40, 248, 0.89) -0.76%,
-              #6911ad 100%
-            );
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-          }
-          .first {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-          .second {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .first {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .second {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+// styles about our advantages!
+section#our-advantages {
+  .container {
+    margin-top: 3rem;
+    h1 {
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      .card {
+        border: 2px solid grey;
+        padding: 30px;
+        border-radius: 20px;
+        // background-color: rgba(0, 0, 0, 0.715);
+        // color: white;
+        .hr {
+          width: 80px;
+          height: 5px;
+          background-color: grey;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+section#form {
+  .container {
+    border-radius: 20px;
+    margin-top: 4rem;
+    border: 2px solid grey;
+    padding: 50px 80px;
+    background-color: white;
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+
+      .left {
+        .forma {
+          width: 100%;
+          margin-top: 10px;
+          height: 40px;
+          font-size: 22px;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid grey;
+        }
+        .checkboxFlex {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+      .right {
+        .card {
+          background-color: rgba(83, 83, 83, 0.1);
+          border-radius: 10px;
+          padding: 40px 60px;
+          .ichimliklar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
           }
         }
       }
     }
   }
-  
-  // styles about our advantages!
-  section#our-advantages {
+}
+
+section#footer{
+    footer{
+        padding: 2rem 2rem;
+        border-radius: 20px 20px 0px 0px;
+        margin-top: 5rem;
+        background-color: white;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            .li-location{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+            .sotial{
+                display: flex;
+                align-items: center;
+                font-size: 23px;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+// repsponsiv
+
+@media (max-width: 1024px) {
+  // about company
+  section#m-about-company {
     .container {
-      margin-top: 3rem;
       h1 {
-        font-weight: 700;
-        font-size: 30px;
         text-align: center;
       }
+      .body {
+        grid-template-columns: repeat(1, 1fr);
+        .status {
+          margin-top: 20px;
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+  //   our advanteges
+  section#our-advantages {
+    .container {
       .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        .card {
-          border: 2px solid grey;
-          padding: 30px;
-          border-radius: 20px;
-          // background-color: rgba(0, 0, 0, 0.715);
-          // color: white;
-          .hr {
-            width: 80px;
-            height: 5px;
-            background-color: grey;
-            border-radius: 10px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  section#m-about-company {
+    .container {
+      h1 {
+        font-size: 28px;
+      }
+      .body {
+        .status {
+          margin-top: 10px;
+          grid-template-columns: repeat(2, 1fr);
+          .liniar {
+            font-size: 30px;
+            margin-top: 10px;
           }
         }
       }
     }
   }
-  
-  // repsponsiv
-  
-  @media (max-width: 1024px) {
-    // about company
-    section#m-about-company {
-      .container {
-        h1 {
-          text-align: center;
-        }
-        .body {
-          grid-template-columns: repeat(1, 1fr);
-          .status {
-            margin-top: 20px;
-            grid-template-columns: repeat(4, 1fr);
-          }
+}
+@media (max-width: 500px) {
+  section#our-advantages {
+    .container {
+      .cards {
+        grid-template-columns: repeat(1, 1fr);
+        :nth-child(even) {
+          display: none;
         }
       }
     }
-    //   our advanteges
-    section#our-advantages {
-      .container{
-          .cards{
-              grid-template-columns: repeat(2, 1fr);
-          }
-      }
-    }
   }
-  @media (max-width: 720px) {
-      section#m-about-company {
-          .container {
-            h1 {
-              font-size: 28px;
-            }
-            .body {
-              .status {
-                margin-top: 10px;
-                grid-template-columns: repeat(2, 1fr);
-                .liniar{
-                  font-size: 30px;
-                  margin-top: 10px;
-                }
-              }
-            }
-          }
-        }
-  }
-  @media (max-width: 500px) {
-    section#our-advantages {
-      .container{
-          .cards{
-              grid-template-columns: repeat(1, 1fr);
-              :nth-child(even){
-                  display: none;
-              }  
-          }
-      }
-    }
-  }
+}
