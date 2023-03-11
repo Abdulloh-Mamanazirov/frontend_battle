@@ -118,6 +118,84 @@ section#Sardor-2 .container .slick-track .card .card-text .card-div-text span {
   color: rgba(255, 255, 255, 0.541);
 }
 
+section#New .container {
+  padding: 1em;
+}
+section#New .container .flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  height: auto;
+}
+section#New .container .flex .new-1 {
+  width: 70%;
+}
+section#New .container .flex .new-1 .flex2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+section#New .container .flex .new-1 .card-max {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 2px solid #4e4e4e;
+  border-radius: 20px;
+  padding: 2em;
+}
+section#New .container .flex .new-1 .card-max p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgb(133, 133, 133);
+}
+section#New .container .flex .new-1 .card-max .flex-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#New .container .flex .new-1 .card-max .flex-3 span {
+  color: rgb(133, 133, 133);
+}
+section#New .container .flex .new-2 {
+  width: 25%;
+}
+section#New .container .flex .new-2 .flex2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+section#New .container .flex .new-2 .flex2 .card-min {
+  border: 2px solid #4e4e4e;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+section#New .container .flex .new-2 .flex2 .card-min:hover {
+  box-shadow: 3px 3px 24px 8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 24px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 24px 8px rgba(0, 0, 0, 0.75);
+}
+section#New .container .flex .new-2 .flex2 .card-min p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 5px 2em;
+}
+@media (max-width: 990px) {
+  section#New .container .new-1 {
+    min-width: 100%;
+  }
+  section#New .container .new-2 {
+    display: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -134,7 +212,6 @@ img {
 
 body {
   font-family: sans-serif;
-  background-image: url(/assets/images/Noise.png);
 }
 
 .container {
