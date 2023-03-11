@@ -1,0 +1,133 @@
+// Muhammad Qodir
+
+// styles section about company!
+section#m-about-company {
+    .container {
+      h1 {
+        font-weight: 600;
+        font-size: 35px;
+      }
+      .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        .about {
+        }
+        .status {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+  
+          .liniar {
+            font-size: 40px;
+            font-weight: 600;
+            background: linear-gradient(
+              96.96deg,
+              rgba(0, 40, 248, 0.89) -0.76%,
+              #6911ad 100%
+            );
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+          }
+          .first {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  
+  // styles about our advantages!
+  section#our-advantages {
+    .container {
+      margin-top: 3rem;
+      h1 {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        .card {
+          border: 2px solid grey;
+          padding: 30px;
+          border-radius: 20px;
+          // background-color: rgba(0, 0, 0, 0.715);
+          // color: white;
+          .hr {
+            width: 80px;
+            height: 5px;
+            background-color: grey;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  // repsponsiv
+  
+  @media (max-width: 1024px) {
+    // about company
+    section#m-about-company {
+      .container {
+        h1 {
+          text-align: center;
+        }
+        .body {
+          grid-template-columns: repeat(1, 1fr);
+          .status {
+            margin-top: 20px;
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+      }
+    }
+    //   our advanteges
+    section#our-advantages {
+      .container{
+          .cards{
+              grid-template-columns: repeat(2, 1fr);
+          }
+      }
+    }
+  }
+  @media (max-width: 720px) {
+      section#m-about-company {
+          .container {
+            h1 {
+              font-size: 28px;
+            }
+            .body {
+              .status {
+                margin-top: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                .liniar{
+                  font-size: 30px;
+                  margin-top: 10px;
+                }
+              }
+            }
+          }
+        }
+  }
+  @media (max-width: 500px) {
+    section#our-advantages {
+      .container{
+          .cards{
+              grid-template-columns: repeat(1, 1fr);
+              :nth-child(even){
+                  display: none;
+              }  
+          }
+      }
+    }
+  }

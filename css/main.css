@@ -1,2 +1,105 @@
+section#m-about-company .container h1 {
+  font-weight: 600;
+  font-size: 35px;
+}
+section#m-about-company .container .body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+section#m-about-company .container .body .status {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section#m-about-company .container .body .status .liniar {
+  font-size: 40px;
+  font-weight: 600;
+  background: linear-gradient(96.96deg, rgba(0, 40, 248, 0.89) -0.76%, #6911ad 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+section#m-about-company .container .body .status .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#m-about-company .container .body .status .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* No CSS *//*# sourceMappingURL=main.css.map */
+section#our-advantages .container {
+  margin-top: 3rem;
+}
+section#our-advantages .container h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+section#our-advantages .container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+section#our-advantages .container .cards .card {
+  border: 2px solid grey;
+  padding: 30px;
+  border-radius: 20px;
+}
+section#our-advantages .container .cards .card .hr {
+  width: 80px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  section#m-about-company .container h1 {
+    text-align: center;
+  }
+  section#m-about-company .container .body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#m-about-company .container .body .status {
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section#our-advantages .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  section#m-about-company .container h1 {
+    font-size: 28px;
+  }
+  section#m-about-company .container .body .status {
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#m-about-company .container .body .status .liniar {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  section#our-advantages .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#our-advantages .container .cards :nth-child(even) {
+    display: none;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}/*# sourceMappingURL=main.css.map */
