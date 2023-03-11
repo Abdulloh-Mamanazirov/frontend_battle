@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "main.scss",
-        "_home.scss",
-        "_portfolio.scss",
-        "_news.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAIA;EACI,UAAA;EACA,SAAA;EACA,sBAAA;EACA,uBAAA;EACA,cAAA;EACA,qBAAA;ACHJ;;ADMA;EACI,eAAA;EACA,gBAAA;ACHJ","file":"main.css"}
