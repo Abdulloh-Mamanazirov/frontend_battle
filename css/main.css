@@ -29,7 +29,9 @@ section#Sardor-1 .container .CardAll {
   padding: 3em;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   gap: 5em;
 }
@@ -58,6 +60,7 @@ section#Sardor-1 .container .CardAll p {
     padding: 3em;
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 2fr;
         grid-template-rows: 2fr;
@@ -98,7 +101,6 @@ nav#navbar .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 250px;
 }
 
 nav#navbar .container ul {
@@ -108,7 +110,12 @@ nav#navbar .container ul {
 }
 
 nav#navbar .container .rightSideNav {
-  margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav#navbar .container .rightSideNav .checkboxContainer {
@@ -177,7 +184,6 @@ nav#navbar .container .rightSideNav span.tel {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
-  font-size: 12px;
 }
 
 nav#navbar .container .rightSideNav span.tel .navMail {
@@ -188,7 +194,7 @@ nav#navbar .container .rightSideNav a.callBtn {
   padding: 10px;
   background-color: #6911ad;
   border-radius: 10px;
-  font-size: 10px;
+  font-size: 15px;
   white-space: nowrap;
   color: white;
 }
@@ -221,7 +227,8 @@ section#Sardor-2 .container .slick-track {
 
 section#Sardor-2 .container .slick-track .card {
   margin: 0 auto;
-  background-color: black;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,7 +259,6 @@ section#Sardor-2 .container .slick-track .card .card-text h5 {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  color: white;
 }
 
 section#Sardor-2 .container .slick-track .card .card-text p {
@@ -260,7 +266,6 @@ section#Sardor-2 .container .slick-track .card .card-text p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(255, 255, 255, 0.541);
 }
 
 section#Sardor-2 .container .slick-track .card .card-text .card-div-text {
@@ -276,7 +281,171 @@ section#Sardor-2 .container .slick-track .card .card-text .card-div-text span {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(255, 255, 255, 0.541);
+}
+
+section#m-about-company {
+  margin-top: 30px;
+}
+
+section#m-about-company .container h1 {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+section#m-about-company .container .body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+section#m-about-company .container .body .status {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+section#m-about-company .container .body .status .liniar {
+  font-size: 40px;
+  font-weight: 600;
+  background: linear-gradient(96.96deg, rgba(0, 40, 248, 0.89) -0.76%, #6911ad 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+section#m-about-company .container .body .status .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#m-about-company .container .body .status .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#our-advantages {
+  background: url("../assets/images/main_page/bgHeader.png") no-repeat;
+  background-size: 700px;
+  background-position: left center;
+}
+
+section#our-advantages .container {
+  margin-top: 3rem;
+}
+
+section#our-advantages .container h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+section#our-advantages .container .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+section#our-advantages .container .cards .card {
+  border: 2px solid grey;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+section#our-advantages .container .cards .card .hr {
+  width: 80px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+section#form {
+  background: url("../assets/images/main_page/gradient.png") no-repeat;
+  background-position: center right;
+  background-size: 600px;
+}
+
+section#form .container {
+  border-radius: 20px;
+  margin-top: 4rem;
+  border: 2px solid grey;
+  padding: 50px 80px;
+}
+
+section#form .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5rem;
+}
+
+section#form .container form .left .forma {
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 22px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+section#form .container form .left .checkboxFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+section#form .container form .right .card {
+  background-color: rgba(83, 83, 83, 0.1);
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+
+section#form .container form .right .card .ichimliklar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+section#form .container form .right .card .ichimliklar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav#nav2 {
@@ -299,6 +468,65 @@ nav#nav2 .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+nav#nav2 .container .checkboxContainer {
+  font-size: 17px;
+  /*  target the elemenent after the label*/
+}
+
+nav#nav2 .container .checkboxContainer .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+nav#nav2 .container .checkboxContainer .label {
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: pointer;
+}
+
+nav#nav2 .container .checkboxContainer .ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+nav#nav2 .container .checkboxContainer .checkbox:checked + .label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+nav#nav2 .container .checkboxContainer .fa-moon {
+  color: pink;
+}
+
+nav#nav2 .container .checkboxContainer .fa-sun {
+  color: yellow;
+  padding-left: 10px;
 }
 
 nav#nav2 .container span.logo2 {
@@ -454,9 +682,145 @@ header#headerA .bgImage2 .container .globe {
   }
 }
 
+section#footer footer {
+  padding: 2rem 2rem;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 5rem;
+}
+
+section#footer footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+section#footer footer ul .li-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+section#footer footer ul .sotial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  section#m-about-company .container h1 {
+    text-align: center;
+  }
+  section#m-about-company .container .body {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  section#m-about-company .container .body .status {
+    margin-top: 20px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  section#our-advantages .container .cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  section#m-about-company .container h1 {
+    font-size: 28px;
+  }
+  section#m-about-company .container .body .status {
+    margin-top: 10px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  section#m-about-company .container .body .status .liniar {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  section#our-advantages .container .cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  section#our-advantages .container .cards :nth-child(even) {
+    display: none;
+  }
+}
+
+section#loyihalar {
+  margin: 40px 0 20px;
+}
+
+section#loyihalar h2 {
+  text-align: center;
+}
+
+section#loyihalar .btns {
+  border: 1px solid;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#loyihalar .btns button {
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+}
+
+section#loyihalar .projectCards {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+section#loyihalar .projectCards .prCard {
+  position: relative;
+}
+
+section#loyihalar .projectCards .prCard p {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  top: 15px;
+  right: 15px;
+}
+
 .dark {
   background-color: #000 !important;
   color: white;
+}
+
+.btnClicked {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6911ad), to(#eb51ff));
+  background-image: linear-gradient(to bottom right, #6911ad, #eb51ff);
 }
 
 * {
