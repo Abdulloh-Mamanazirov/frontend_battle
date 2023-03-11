@@ -779,10 +779,18 @@ section#loyihalar .btns {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+  margin: 15px auto;
 }
 
 section#loyihalar .btns button {
-  padding: 15px;
+  padding: 15px 25px;
   background-color: transparent;
   border: none;
   border-radius: 25px;
@@ -806,10 +814,34 @@ section#loyihalar .projectCards .prCard {
 section#loyihalar .projectCards .prCard p {
   position: absolute;
   background-color: #fff;
+  color: #111 !important;
   padding: 10px;
   border-radius: 15px;
   top: 15px;
   right: 15px;
+}
+
+section#loyihalar .allbtnwrapper {
+  text-align: center;
+  margin: 15px 0;
+}
+
+section#loyihalar .allbtnwrapper button#all2 {
+  padding: 15px 25px;
+  background-color: #6911ad;
+  white-space: nowrap;
+  width: 10px;
+  text-align: center;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section#loyihalar .allbtnwrapper button#all2:hover {
+  width: 160px;
+  color: #fff;
 }
 
 .dark {
