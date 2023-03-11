@@ -32,9 +32,6 @@ nav#navbar .container .rightSideNav {
   margin-right: 70px;
 }
 
-nav#navbar .container .rightSideNav .checkboxContainer {
-  /*  target the elemenent after the label*/
-}
 
 nav#navbar .container .rightSideNav .checkboxContainer .checkbox {
   opacity: 0;
@@ -311,6 +308,7 @@ img {
 
 body {
   font-family: sans-serif;
+  background-image: url(/assets/images/Noise.png);
 }
 
 .d-flex {
