@@ -1,5 +1,197 @@
 // Muhammad Qodir
 
+// Header
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+nav#navbar {
+  font-weight: 500;
+  padding: 20px 0;
+  background-color: #b3b3b3e9;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      gap: 20px;
+      font-size: 20px;
+      display: flex;
+    }
+    .rightSideNav {
+      display: flex;
+      align-items: center;
+      .checkboxContainer {
+        .checkbox {
+          opacity: 0;
+          position: absolute;
+        }
+
+        .label {
+          width: 50px;
+          height: 26px;
+          background-color: #111;
+          display: flex;
+          border-radius: 50px;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px;
+          position: relative;
+          transform: scale(1.5);
+          cursor: pointer;
+        }
+
+        .ball {
+          width: 20px;
+          height: 20px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          border-radius: 50%;
+          transition: transform 0.2s linear;
+        }
+
+        /*  target the elemenent after the label*/
+        .checkbox:checked + .label .ball {
+          transform: translateX(24px);
+        }
+
+        .fa-moon {
+          color: pink;
+        }
+
+        .fa-sun {
+          color: yellow;
+          padding-left: 10px;
+        }
+      }
+      span.tel {
+        margin: 0 10px 0 30px;
+        white-space: nowrap;
+        flex-direction: column;
+        gap: 5px;
+        .navMail {
+          font-size: 10px;
+        }
+      }
+      a.callBtn {
+        padding: 10px;
+        background-color: #6911ad;
+        border-radius: 10px;
+        font-size: 15px;
+        white-space: nowrap;
+        color: white;
+      }
+    }
+  }
+}
+nav#nav2 {
+  background-color: #b3b3b3e9;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 0;
+  font-size: 25px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .checkboxContainer {
+      font-size: 17px;
+        .checkbox {
+          opacity: 0;
+          position: absolute;
+        }
+
+        .label {
+          width: 50px;
+          height: 26px;
+          background-color: #111;
+          display: flex;
+          border-radius: 50px;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px;
+          position: relative;
+          transform: scale(1.5);
+          cursor: pointer;
+        }
+
+        .ball {
+          width: 20px;
+          height: 20px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          border-radius: 50%;
+          transition: transform 0.2s linear;
+        }
+
+        /*  target the elemenent after the label*/
+        .checkbox:checked + .label .ball {
+          transform: translateX(24px);
+        }
+
+        .fa-moon {
+          color: pink;
+        }
+
+        .fa-sun {
+          color: yellow;
+          padding-left: 10px;
+        }
+      }
+    span.logo2 {
+      font-family: Bangers;
+      font-size: 45px;
+    }
+    .navUl {
+      padding: 10px;
+      position: absolute;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.755);
+      color: white;
+      display: none;
+      .nimadir {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 25px;
+      }
+      .nlink {
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 30px;
+      }
+      .navulbtn {
+        padding: 15px 24px;
+        background-color: #6911ad;
+        border-radius: 20px;
+        margin-top: auto;
+      }
+    }
+  }
+  #navlabel:checked ~ .navUl {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  nav#navbar {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  nav#nav2 {
+    display: none;}}
+
+// Header end..
+
 // styles section about company!
 section#m-about-company {
   .container {
@@ -117,6 +309,21 @@ section#form {
               align-items: center;
             }
           }
+        }
+        .purplebtn{
+            margin-top: 1rem;
+            color: black;
+            padding: 18px 30px;
+            border-radius: 30px;
+            background-color: #6911ad;
+            display: block;
+            width: 10px;
+            transition: all 0.3s;
+            font-size: 22px;
+            &:hover{
+                width: 170px;
+                color: white;
+            }
         }
       }
     }
