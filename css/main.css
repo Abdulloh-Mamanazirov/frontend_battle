@@ -29,9 +29,7 @@ section#Sardor-1 .container .CardAll {
   padding: 3em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   gap: 5em;
 }
@@ -60,9 +58,7 @@ section#Sardor-1 .container .CardAll p {
     padding: 3em;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 2fr;
         grid-template-rows: 2fr;
     gap: 5em;
   }
@@ -118,9 +114,6 @@ nav#navbar .container .rightSideNav {
           align-items: center;
 }
 
-nav#navbar .container .rightSideNav .checkboxContainer {
-  /*  target the elemenent after the label*/
-}
 
 nav#navbar .container .rightSideNav .checkboxContainer .checkbox {
   opacity: 0;
@@ -295,7 +288,6 @@ section#m-about-company .container h1 {
 section#m-about-company .container .body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
@@ -303,7 +295,6 @@ section#m-about-company .container .body {
 section#m-about-company .container .body .status {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
@@ -360,7 +351,6 @@ section#our-advantages .container h1 {
 section#our-advantages .container .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
@@ -430,7 +420,6 @@ section#form .container form .right .card {
 section#form .container form .right .card .ichimliklar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
@@ -723,16 +712,15 @@ section#footer footer ul .sotial {
     text-align: center;
   }
   section#m-about-company .container .body {
-    -ms-grid-columns: (1fr)[1];
+    
         grid-template-columns: repeat(1, 1fr);
   }
   section#m-about-company .container .body .status {
     margin-top: 20px;
-    -ms-grid-columns: (1fr)[4];
+    
         grid-template-columns: repeat(4, 1fr);
   }
   section#our-advantages .container .cards {
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -743,7 +731,6 @@ section#footer footer ul .sotial {
   }
   section#m-about-company .container .body .status {
     margin-top: 10px;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   section#m-about-company .container .body .status .liniar {
@@ -754,7 +741,7 @@ section#footer footer ul .sotial {
 
 @media (max-width: 500px) {
   section#our-advantages .container .cards {
-    -ms-grid-columns: (1fr)[1];
+    
         grid-template-columns: repeat(1, 1fr);
   }
   section#our-advantages .container .cards :nth-child(even) {
@@ -801,9 +788,7 @@ section#loyihalar .projectCards {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
 }
 
@@ -853,6 +838,84 @@ section#loyihalar .allbtnwrapper button#all2:hover {
   color: white;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#6911ad), to(#eb51ff));
   background-image: linear-gradient(to bottom right, #6911ad, #eb51ff);
+}
+
+section#New .container {
+  padding: 1em;
+}
+section#New .container .flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  height: auto;
+}
+section#New .container .flex .new-1 {
+  width: 70%;
+}
+section#New .container .flex .new-1 .flex2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+section#New .container .flex .new-1 .card-max {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 2px solid #4e4e4e;
+  border-radius: 20px;
+  padding: 2em;
+}
+section#New .container .flex .new-1 .card-max p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgb(133, 133, 133);
+}
+section#New .container .flex .new-1 .card-max .flex-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#New .container .flex .new-1 .card-max .flex-3 span {
+  color: rgb(133, 133, 133);
+}
+section#New .container .flex .new-2 {
+  width: 25%;
+}
+section#New .container .flex .new-2 .flex2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+section#New .container .flex .new-2 .flex2 .card-min {
+  border: 2px solid #4e4e4e;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+section#New .container .flex .new-2 .flex2 .card-min:hover {
+  box-shadow: 3px 3px 24px 8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 24px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 24px 8px rgba(0, 0, 0, 0.75);
+}
+section#New .container .flex .new-2 .flex2 .card-min p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 5px 2em;
+}
+@media (max-width: 990px) {
+  section#New .container .new-1 {
+    min-width: 100%;
+  }
+  section#New .container .new-2 {
+    display: none;
+  }
 }
 
 * {
