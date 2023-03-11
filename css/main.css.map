@@ -1,1 +1,16 @@
+<<<<<<< HEAD
 {"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAIA;EACI,UAAA;EACA,SAAA;EACA,sBAAA;EACA,uBAAA;EACA,cAAA;EACA,qBAAA;ACHJ;;ADMA;EACI,eAAA;EACA,gBAAA;ACHJ","file":"main.css"}
+=======
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;EACtB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;CAExB;;AACD,AAAA,GAAG,CAAA;EACC,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "main.scss",
+        "_home.scss",
+        "_portfolio.scss",
+        "_news.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
+>>>>>>> cb624d7bb026b8c685dfebe23cd63b9516f85c24
