@@ -101,50 +101,50 @@ nav#nav2 {
     justify-content: space-between;
     .checkboxContainer {
       font-size: 17px;
-        .checkbox {
-          opacity: 0;
-          position: absolute;
-        }
-
-        .label {
-          width: 50px;
-          height: 26px;
-          background-color: #111;
-          display: flex;
-          border-radius: 50px;
-          align-items: center;
-          justify-content: space-between;
-          padding: 5px;
-          position: relative;
-          transform: scale(1.5);
-          cursor: pointer;
-        }
-
-        .ball {
-          width: 20px;
-          height: 20px;
-          background-color: white;
-          position: absolute;
-          top: 2px;
-          left: 2px;
-          border-radius: 50%;
-          transition: transform 0.2s linear;
-        }
-
-        /*  target the elemenent after the label*/
-        .checkbox:checked + .label .ball {
-          transform: translateX(24px);
-        }
-
-        .fa-moon {
-          color: pink;
-        }
-
-        .fa-sun {
-          color: yellow;
-          padding-left: 10px;
-        }
+      .checkbox {
+        opacity: 0;
+        position: absolute;
       }
+
+      .label {
+        width: 50px;
+        height: 26px;
+        background-color: #111;
+        display: flex;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        transform: scale(1.5);
+        cursor: pointer;
+      }
+
+      .ball {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+      }
+
+      /*  target the elemenent after the label*/
+      .checkbox:checked + .label .ball {
+        transform: translateX(24px);
+      }
+
+      .fa-moon {
+        color: pink;
+      }
+
+      .fa-sun {
+        color: yellow;
+        padding-left: 10px;
+      }
+    }
     span.logo2 {
       font-family: Bangers;
       font-size: 45px;
@@ -181,15 +181,6 @@ nav#nav2 {
     display: block;
   }
 }
-@media (max-width: 1000px) {
-  nav#navbar {
-    display: none;
-  }
-}
-@media (min-width: 1000px) {
-  nav#nav2 {
-    display: none;}}
-
 // Header end..
 
 // styles section about company!
@@ -310,49 +301,49 @@ section#form {
             }
           }
         }
-        .purplebtn{
-            margin-top: 1rem;
-            color: black;
-            padding: 18px 30px;
-            border-radius: 30px;
-            background-color: #6911ad;
-            display: block;
-            width: 10px;
-            transition: all 0.3s;
-            font-size: 22px;
-            &:hover{
-                width: 170px;
-                color: white;
-            }
+        .purplebtn {
+          margin-top: 1rem;
+          color: black;
+          padding: 18px 30px;
+          border-radius: 30px;
+          background-color: #6911ad;
+          display: block;
+          width: 10px;
+          transition: all 0.3s;
+          font-size: 22px;
+          &:hover {
+            width: 170px;
+            color: white;
+          }
         }
       }
     }
   }
 }
 
-section#footer{
-    footer{
-        padding: 2rem 2rem;
-        border-radius: 20px 20px 0px 0px;
-        margin-top: 5rem;
-        background-color: white;
-        ul{
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-            .li-location{
-                display: flex;
-                align-items: center;
-                gap: 25px;
-            }
-            .sotial{
-                display: flex;
-                align-items: center;
-                font-size: 23px;
-                gap: 1rem;
-            }
-        }
+section#footer {
+  footer {
+    padding: 2rem 2rem;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 5rem;
+    background-color: white;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      .li-location {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      .sotial {
+        display: flex;
+        align-items: center;
+        font-size: 23px;
+        gap: 1rem;
+      }
     }
+  }
 }
 
 // repsponsiv
@@ -381,6 +372,41 @@ section#footer{
       }
     }
   }
+  //   form
+  section#form {
+    .container {
+      form {
+        display: block;
+        .checkboxFlex {
+          justify-content: space-between;
+        }
+        .right {
+          .purplebtn {
+            color: white;
+            padding: 18px 30px;
+            border-radius: 30px;
+            background-color: #6911ad;
+            width: 170px;
+            margin: 1rem auto;
+            &:hover {
+              color: #6911ad;
+              background-color: white;
+              border: 2px solid #6911ad;
+            }
+          }
+        }
+      }
+    }
+  }
+//   footer
+section#footer{
+    footer{
+        ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
 }
 @media (max-width: 720px) {
   section#m-about-company {
@@ -411,5 +437,30 @@ section#footer{
         }
       }
     }
+  }
+  //   form
+  section#form {
+    .container {
+      form {
+        // display: none;
+        .left {
+          .checkboxFlex {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+// Header ...
+
+@media (max-width: 1000px) {
+  nav#navbar {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  nav#nav2 {
+    display: none;
   }
 }
